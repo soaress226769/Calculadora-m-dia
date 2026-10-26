@@ -1,0 +1,214 @@
+/* ==============================
+   TELA DE LOGIN
+================================= */
+
+.login-container {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #d4e9ff
+    );
+}
+
+
+/* CARTÃO DE LOGIN */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 10px 30px rgba(44, 62, 80, 0.15);
+
+    text-align: center;
+}
+
+
+/* CABEÇALHO */
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.icone {
+    width: 70px;
+    height: 70px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e8f3ff;
+
+    border-radius: 50%;
+
+    font-size: 32px;
+}
+
+.login-header h1 {
+    margin-bottom: 8px;
+
+    color: #2c3e50;
+
+    font-size: 27px;
+}
+
+.login-header p {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* FORMULÁRIO */
+
+.login-form {
+    width: 100%;
+
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #34495e;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #d5dce3;
+
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    color: #2c3e50;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+/* CAMPO AO CLICAR */
+
+.login-form input:focus {
+    outline: none;
+
+    border-color: #3498db;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border-radius: 9px;
+
+    background: #3498db;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 10px rgba(52, 152, 219, 0.25);
+
+    transition: 0.2s;
+}
+
+
+/* EFEITO DO BOTÃO */
+
+.botao:hover {
+    background: #2980b9;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 14px rgba(52, 152, 219, 0.30);
+}
+
+
+/* RODAPÉ */
+
+.login-footer {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eeeeee;
+
+    text-align: center;
+}
+
+.login-footer p {
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 500px) {
+
+    .login-card {
+        padding: 30px 25px;
+    }
+
+    .login-header h1 {
+        font-size: 23px;
+    }
+
+}

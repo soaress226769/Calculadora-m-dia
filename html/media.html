@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>📚 Calculadora Aritmética Simples</title>
+
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Calculadora de Média</h1>
+
+        <p class="subtitulo">Sistema de notas de alunos</p>
+
+        <div id="formulario">
+
+            <label>Nome do Aluno:</label>
+
+            <input 
+                type="text" 
+                id="nome"
+                placeholder="Digite o nome do aluno"
+                required
+            >
+
+            <label>Nome da Disciplina:</label>
+
+            <select id="disciplina" required>
+
+                <option value="">Selecione a disciplina</option>
+
+                <option value="FDD">
+                    Fundamentos do Design Digital
+                </option>
+
+                <option value="FDDI">
+                    Fotografia Digital
+                </option>
+
+                <option value="PRAAI">
+                    Projetos de Áudio e Vídeo I
+                </option>
+
+            </select>
+
+            <div class="notas">
+
+                <div>
+                    <label>1° Bimestre</label>
+                    <input 
+                        type="number" 
+                        id="nota1"
+                        placeholder="Digite a nota"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label>2° Bimestre</label>
+                    <input 
+                        type="number" 
+                        id="nota2"
+                        placeholder="Digite a nota"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label>3° Bimestre</label>
+                    <input 
+                        type="number" 
+                        id="nota3"
+                        placeholder="Digite a nota"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label>4° Bimestre</label>
+                    <input 
+                        type="number" 
+                        id="nota4"
+                        placeholder="Digite a nota"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <button id="calcular" onclick="calcularMedia()">
+                Calcular Média
+            </button>
+
+            <button id="novocalculo" onclick="calcularnovo()">
+                Calcular Novamente
+            </button>
+
+            <a href="" id="link">calculadora normal<>></a>
+
+        </div>
+
+        <div id="resultado" class="resultado">
+
+            <p>
+                Preencha os dados acima e clique em calcular média
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="../JS/js.js"></script>
+
+</body>
+
+</html>
